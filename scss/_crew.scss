@@ -1,0 +1,267 @@
+.show-crew {
+    display: block !important;
+}
+
+.hero-section-crew {
+    padding-top: 40px;
+    background-color: $primary;
+    background-image: url(../img/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+
+    .container {
+        @include header();
+    }
+
+    .container-crew {
+        width: 100%;
+        max-width: 1158px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        .info {
+            h3 {
+                color: $white;
+                font-size: 28px;
+                font-weight: 400;
+                font-style: normal;
+                margin-top: 76px;
+                margin-bottom: 154px;
+                letter-spacing: 4.72px;
+
+                span {
+                    margin-right: 22px;
+                    color: $grafite;
+                    letter-spacing: 4.72px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .menu-crew {
+            display: flex;
+            column-gap: 24px;
+
+            button {
+                position: relative;
+                top: 400px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #40424B;
+                display: inline-block;
+                cursor: pointer;
+                border: none;
+
+                &:hover {
+                    background-color: #979797;
+                }
+
+            }
+
+            .active-crew {
+                background-color: $white;
+
+            }
+        }
+
+        .info-crew {
+            display: none;
+
+            .crew {
+                display: flex;
+                justify-content: space-between;
+
+                .content {
+
+
+
+                    h4 {
+                        font-size: 32px;
+                        font-family: "Bellefair", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #909296;
+
+                        padding-bottom: 15px;
+                    }
+
+                    h2 {
+                        font-size: 56px;
+                        font-family: "Bellefair", serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: $white;
+                        padding-bottom: 34px;
+                    }
+
+                    p {
+                        color: $gray;
+                        font-size: 18px;
+                        text-transform: none;
+                        line-height: 32px;
+                        font-family: "Barlow", sans-serif;
+                        width: 469px;
+                    }
+
+
+                }
+
+                .image {
+                    margin-top: -125px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1270px) {
+        background-image: url(../img/crew/background-crew-tablet.jpg);
+        padding-top: 0;
+
+        .container-crew {
+
+            .info {
+                h3 {
+                    font-size: 20px !important;
+                    letter-spacing: 3.38px !important;
+                    margin-bottom: 0;
+                    margin-top: 40px;
+                }
+            }
+
+            .menu-crew {
+                display: flex;
+                column-gap: 16px;
+                justify-content: center;
+
+                button {
+                    width: 10px;
+                    height: 10px;
+                    top: 290px;
+                }
+            }
+        }
+
+        .info-crew {
+
+
+            .crew {
+                flex-direction: column !important;
+                text-align: center;
+                align-items: center;
+
+                .content {
+                   
+
+                    h4 {
+                        font-size: 24px !important;
+                        padding-top: 60px;
+                        padding-bottom: 8px !important;
+                    }
+
+                    h2 {
+                        font-size: 40px !important;
+                        padding-bottom: 16px !important;
+                    }
+
+                    p {
+                        font-size: 16px !important;
+                        line-height: 28px !important;
+                        width: 609px !important;
+                    }
+
+
+                }
+
+                .image {
+                    margin-top: 150px !important;
+
+                    img {
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 640px) {
+        background-image: url(../img/crew/background-crew-mobile.jpg) !important;
+        padding-top: 0;
+
+        .container-crew {
+
+
+            .info {
+                text-align: center !important;
+
+                h3 {
+                    font-size: 16px !important;
+                    letter-spacing: 2.7px !important;
+                    margin-bottom: 0;
+                    margin-top: 24px;
+                }
+            }
+
+            .menu-crew {
+                display: flex;
+                column-gap: 16px;
+                justify-content: center;
+
+                button {
+                    width: 10px;
+                    height: 10px;
+                    top: 295px;
+                }
+            }
+        }
+
+        .info-crew {
+
+
+            .crew {
+                flex-direction: column-reverse !important;
+
+                .content {
+                    margin-bottom: 50px;
+
+                    h4 {
+                        font-size: 16px !important;
+                        padding-top: 70px;
+                        padding-bottom: 8px !important;
+                    }
+
+                    h2 {
+                        font-size: 24px !important;
+                        padding-bottom: 16px !important;
+                    }
+
+                    p {
+                        font-size: 15px !important;
+                        line-height: 25px !important;
+                        width: 327px !important;
+                    }
+
+
+                }
+
+                .image {
+                    margin-top: 32px !important;
+
+                    img {
+                        width: 327px !important;
+
+                    }
+
+
+                }
+            }
+        }
+    }
+}

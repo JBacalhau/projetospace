@@ -1,0 +1,179 @@
+.hero-section {
+    padding-top: 40px;
+    background-color: $primary;
+    background-image: url(../img/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+
+
+    .container {
+        @include header();
+    }
+
+    .container-home {
+        width: 100%;
+        max-width: 1158px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        .content {
+            max-width: 469px;
+            margin-top: 201px;
+
+            h1 {
+                color: $gray;
+                font-size: 28px;
+                letter-spacing: 4.72px;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            h2 {
+                color: $white;
+                font-size: 150px;
+                font-family: "Bellefair", serif;
+                font-weight: 400;
+                font-style: normal;
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+
+            p {
+                color: $gray;
+                font-size: 18px;
+                font-style: normal;
+                text-transform: none;
+                line-height: 32px;
+                font-family: "Barlow", sans-serif !important;
+            }
+        }
+
+        .explore {
+            margin-bottom: 100px !important;
+            button {
+                margin-top: 305px;
+                background-color: $white;
+                color: $primary;
+                width: 274px;
+                height: 274px;
+                border-radius: 50%;
+                font-family: "Bellefair", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 32px;
+                letter-spacing: 2px;
+                display: inline-block;
+                cursor: pointer;
+                border: none;
+
+                &:active {
+                    box-shadow: 0 0 2px 80px rgba(#24262F, 0.7);
+
+                }
+            }
+
+
+        }
+
+    }
+
+    @media(max-width: 1270px) {
+        background-image: url(../img/home/background-home-tablet.jpg);
+        padding-top: 0;
+
+        .container-home {
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+
+            .content {
+                text-align: center;
+                margin-top: 106px;
+
+                h1 {
+                    font-size: 20px;
+                    letter-spacing: 3.38px;
+                }
+
+                h2 {
+                    line-height: 150px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+
+            .explore {
+                button {
+                    margin-top: 150px;
+                    margin-bottom: 100px;
+                    width: 242px;
+                    height: 242px;
+
+                    &:active {
+                        box-shadow: 0 0 2px 48px rgba(#24262F, 0.7);
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 640px) {
+        background-image: url(../img/home/background-home-mobile.jpg) !important;
+        padding-top: 0;
+       
+
+        .container-home {
+            
+            .content {
+                
+                text-align: center;
+                margin-top: 58px !important;
+
+                h1 {
+                    font-size: 16px !important;
+                    letter-spacing: 2.7px !important;
+                }
+
+                h2 {
+                    font-size: 80px !important;
+                    line-height: 100px !important;
+                }
+
+                p {
+                    font-size: 15px !important;
+                    line-height: 25px !important;
+                }
+            }
+
+            .explore {
+                
+                button {
+                    margin-top: 75px;
+                    margin-bottom: 60px;
+                    width: 150px !important;
+                    height: 150px !important;
+                    font-size: 20px !important;
+                    letter-spacing: 1.25px !important;
+
+                    &:active {
+                        box-shadow: 0 0 2px 48px rgba(#24262F, 0.7);
+                    }
+                }
+            }
+
+        }
+
+    }
+}

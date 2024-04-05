@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-Tourism</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- aplicando ícon para a aba do navegador -->
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
+</head>
+
+<body>
+
+    <div class="hero-section-crew">
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/shared/logo.svg" alt="Logo Space-Tourism">
+                </a>
+            </div>
+
+            <!--menu celular-->
+            <div class="btn-menu">
+                <div class="bar-menu"></div>
+                <div class="bar-menu"></div>
+                <div class="bar-menu"></div>
+            </div>
+
+            <div class="menu">
+                <div class="bar"></div>
+
+                <a href="./index.html"><span>00</span>Home</a>
+                <a href="./destination.html"><span>01</span>Destination</a>
+                <a href="./crew.html" class="active"><span>02</span>Crew</a>
+                <a href="./technology.html"><span>03</span>Techology</a>
+            </div>
+        </div>
+
+        <div class="container-crew">
+            <div class="info">
+                <h3><span>02</span>Meet your crew</h3>
+            </div>
+
+            <nav class="menu-crew">
+                <button class="active-crew" data-crew="1"></button>
+                <button data-crew="2"></button>
+                <button data-crew="3"></button>
+                <button data-crew="4"></button>
+            </nav>
+
+            <!-- Douglas Hurley -->
+            <div class="info-crew show-crew" data-crew="1">
+                <div class="crew">
+
+                    <div class="content">
+
+                        <h4>Commander</h4>
+                        <h2>Douglas Hurley</h2>
+                        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
+                            astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                        </p>
+                    </div>
+
+                    <div class="image">
+                        <picture>
+                            
+                            <source srcset="img/crew/image-removebg-preview(289).png" media="(min-width: 1270px)">
+                            <source srcset="img/crew/image-douglas-hurley-tablet.png" media="(min-width: 640px)">
+                            <img src="img/crew/image-douglas-hurley-mobile.png" alt="">
+
+                        </picture>
+
+                        <div class="barimag"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mark Shuttleworth -->
+            <div class="info-crew " data-crew="2">
+                <div class="crew">
+
+                    <div class="content">
+
+                        <h4>Mission Specialist</h4>
+                        <h2>Mark Shuttleworth</h2>
+                        <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the
+                            Linux-based
+                            Ubuntu operating system. Shuttleworth became the first South African to travel to space as a
+                            space tourist.
+                        </p>
+
+                    </div>
+
+                    <div class="image">
+                        <picture>
+
+                            <source srcset="img/crew/image-mark-shuttleworth.png" media="(min-width: 1270px)">
+                            <source srcset="img/crew/image-mark-shuttleworth-tablet.png" media="(min-width: 640px)">
+                            <img src="img/crew/image-mark-shuttleworth-mobile.png" alt="">
+                        </picture>
+                            
+                    </div>
+                    <div class="barimag"></div>
+                </div>
+            </div>
+
+            <!-- Victor Glover -->
+            <div class="info-crew" data-crew="3">
+                <div class="crew">
+
+                    <div class="content">
+
+                        <h4>Pilot</h4>
+                        <h2>Victor Glover</h2>
+                        <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space
+                            Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
+                            member
+                            of Expedition 64, and served as a station systems flight engineer.
+                        </p>
+
+                    </div>
+
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/crew/image-removebg-preview(288).png" media="(min-width: 1270px)">
+                            <source srcset="img/crew/image-victor-glover-tablet.png" media="(min-width: 640px)">
+                            <img src="img/crew/image-victor-glover-mobile.png" alt="">
+
+                        </picture>
+                        <div class="barimag"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Anousheh Ansari -->
+            <div class="info-crew" data-crew="4">
+                <div class="crew">
+
+                    <div class="content">
+
+                        <h4>Flight Engineer</h4>
+                        <h2>Anousheh Ansari</h2>
+                        <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was
+                            the
+                            fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the
+                            first
+                            Iranian in space.
+                        </p>
+
+                    </div>
+
+                    <div class="image">
+                        <picture>
+                        <source srcset="img/crew/image-anousheh-ansari.png" media="(min-width: 1270px)">
+                        <source srcset="img/crew/image-anousheh-ansari-tablet.png" media="(min-width: 640px)">
+                        <img src="img/crew/image-anousheh-ansari-mobile.png" alt="">
+                        </picture>
+                        <div class="barimag"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/crew.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- aplicando ícon para a aba do navegador -->
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="hero-section-destination">
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/shared/logo.svg" alt="Logo Space-Tourism">
+                </a>
+            </div>
+
+             <!--menu celular-->
+             <div class="btn-menu">
+                <div class="bar-menu"></div>
+                <div class="bar-menu"></div>
+                <div class="bar-menu"></div>
+            </div>
+            
+            <div class="menu">
+                <div class="bar"></div>
+
+                <a href="./index.html"><span>00</span>Home</a>
+                <a href="./destination.html" class="active"><span>01</span>Destination</a>
+                <a href="./crew.html"><span>02</span>Crew</a>
+                <a href="./technology.html"><span>03</span>Techology</a>
+            </div>
+        </div>
+
+        <div class="container-destination">
+
+            <div class="destination">
+
+                <div class="content">
+
+                    <h3 data-aos="fade-down" data-aos-duration="1000"><span>01</span>Pick your destination</h3>
+
+                </div>
+
+
+                <nav class="menu-destination ">
+
+                    <a id="btn-moon" class="active-planet" data-planet="1">Moon</a>
+                    <a id="btn-mars" data-planet="2">Mars</a>
+                    <a id="btn-europa" data-planet="3">Europa</a>
+                    <a id="btn-titan" data-planet="4">Titan</a>
+
+                </nav>
+            </div>
+
+
+            <!-- Moon -->
+            <div class="content-planet  show" id="moon" data-planet="1">
+                <div class="info">
+
+                    <div class="image">
+
+                        <img src="img/destination/image-moon.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                    </div>
+
+                    <div class="container-planet">
+                        <h2 data-aos="fade-down" data-aos-delay="300">Moon</h2>
+
+                        <p data-aos="fade-down" data-aos-delay="400">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                            perspective and come back refreshed. While you’re there, take in some history by visiting
+                            the
+                            Luna 2
+                            and Apollo 11 landing sites.</p>
+
+                        <div data-aos="fade-down" data-aos-delay="500" class="bar"></div>
+
+                        <div class="details">
+
+                            <p data-aos="fade-down" data-aos-delay="600">Avg. distance <br><span>384,400 km</span></p>
+
+
+                            <p data-aos="fade-down" data-aos-delay="700">Est. travel time <br><span>3 days</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mars -->
+            <div class="content-planet " id="mars" data-planet="2">
+                <div class="info">
+                    <div class="image">
+
+                        <img src="img/destination/image-mars.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                    </div>
+
+                    <div class="container-planet">
+
+                        <h2 data-aos="fade-down" data-aos-delay="300">Mars</h2>
+
+                        <p data-aos="fade-down" data-aos-delay="340">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
+                            planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+
+                        <div data-aos="fade-down" data-aos-delay="500" class="bar"></div>
+
+                        <div class="details">
+
+                            <p data-aos="fade-down" data-aos-delay="600">Avg. distance <br><span>225 MIL. km</span></p>
+
+
+                            <p data-aos="fade-down" data-aos-delay="700">Est. travel time <br><span>9 months</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europa -->
+            <div class="content-planet" id="europa" data-planet="3">
+                <div class="info">
+                    <div class="image">
+
+                        <img src="img/destination/image-europa.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                    </div>
+                    <div class="container-planet">
+                        <h2 data-aos="fade-down" data-aos-delay="300">Europa</h2>
+
+                        <p data-aos="fade-down" data-aos-delay="400">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s
+                            dream. With
+                            an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple
+                            relaxation in
+                            your snug wintery cabin.</p>
+
+                        <div data-aos="fade-down" data-aos-delay="500" class="bar"></div>
+
+                        <div class="details">
+
+                            <p data-aos="fade-down" data-aos-delay="600">Avg. distance <br><span>628 MIL. km</span></p>
+
+
+                            <p data-aos="fade-down" data-aos-delay="700">Est. travel time <br><span>3 years</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Titan -->
+            <div class="content-planet " id="titan"  data-planet="4">
+                <div class="info">
+                    <div class="image">
+
+                        <img src="img/destination/image-titan.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
+                    </div>
+                    <div class="container-planet">
+                        <h2 data-aos="fade-down" data-aos-delay="300">Titan</h2>
+
+                        <p data-aos="fade-down" data-aos-delay="400">The only moon known to have a dense atmosphere other than Earth, Titan is a home away
+                            from home
+                            (just a few hundred degrees colder!). As a bonus, you get striking views of the
+                            Rings of Saturn.
+                        </p>
+
+                        <div data-aos="fade-down" data-aos-delay="500" class="bar"></div>
+
+                        <div class="details">
+
+                            <p data-aos="fade-down" data-aos-delay="600">Avg. distance <br><span>1.6 BIL. km</span></p>
+
+
+                            <p data-aos="fade-down" data-aos-delay="700">Est. travel time <br><span>7 years</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 10
+        });
+       
+    </script>
+</body>
+
+</html>

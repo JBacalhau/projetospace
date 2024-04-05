@@ -1,0 +1,290 @@
+.show-tec {
+    display: block !important;
+}
+
+.hero-section-technology {
+    padding-top: 40px;
+    background-color: $primary;
+    background-image: url(../img/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+
+    .container {
+        @include header();
+    }
+
+    .container-technology {
+        width: 100%;
+        max-width: 1110px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 137px;
+
+        h3 {
+            color: $white;
+            font-size: 28px;
+            letter-spacing: 4.72px;
+            font-weight: 400;
+            font-style: normal;
+
+            span {
+                margin-right: 22px;
+                color: $grafite;
+                letter-spacing: 4.72px;
+                font-weight: bold;
+            }
+        }
+
+        .content {
+
+            box-sizing: border-box;
+            display: flex;
+            padding-top: 1px;
+            align-items: center;
+
+            .menu-tec {
+
+                padding-right: 80px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 32px;
+
+                button {
+                    background-color: $primary;
+                    color: $white;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    font-family: "Bellefair", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 32px;
+                    display: inline-block;
+                    cursor: pointer;
+                    border: 1px solid $grafite;
+
+                    &:hover {
+                        border: 1px solid $white
+                    }
+                }
+
+                .active-tec {
+                    background-color: $white;
+                    color: $primary;
+                    border: none;
+                }
+
+
+            }
+
+            .info-tec {
+                display: none;
+
+
+                .head {
+                    display: flex;
+                    align-items: center;
+
+                    .info {
+                        h3 {
+                            color: $gray;
+                            font-size: 16px;
+                            letter-spacing: 4.72px;
+                            margin-bottom: 11px;
+                        }
+
+                        h2 {
+                            font-size: 56px;
+                            font-family: "Bellefair", serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: $white;                           
+                            padding-bottom: 17px;
+                        }
+
+                        p {
+                            color: $gray;
+                            font-size: 18px;
+                            text-transform: none;
+                            line-height: 32px;
+                            font-family: "Barlow", sans-serif;
+                            width: 443px;
+                        }
+                    }
+
+                    .image-1 {
+                        margin-left: 130px;
+                        margin-bottom: 100px;
+                       
+                    }
+                }
+
+
+            }
+        }
+
+
+    }
+
+    @media(max-width: 1270px) {
+        background-image: url(../img/technology/background-technology-tablet.jpg);
+        padding: 0;
+
+        .container-technology {
+            display: flex;
+            margin-top: 40px;
+
+            h3 {
+                font-size: 20px !important;
+                letter-spacing: 3.38px !important;
+                margin-bottom: 0;
+
+            }
+
+            .content {
+                display: block;
+
+                .menu-tec {
+                    margin-top: 410px;
+                    padding: 0 !important;
+                    flex-direction: revert !important;
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 16px;
+
+                    button {
+                        width: 60px;
+                        height: 60px;
+                        
+                    }
+
+                }
+
+                .info-tec {
+                    .head {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+
+                        .info {
+                            margin-bottom: 100px;
+                            h3 {
+                                color: $gray;
+                                font-size: 16px;
+                                letter-spacing: 2.7px;
+                                margin-bottom: 11px;
+                                margin-top: 44px;
+                            }
+
+                            h2 {
+                                font-size: 40px;
+                                
+                                padding-bottom: 16px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                line-height: 28px;
+                                width: 470px;
+                            }
+                        }
+
+                        .image-1 {
+                            margin: 0;
+                            position: absolute;
+                            top: 200px;
+                            img{
+                                width: 100%;
+                            };
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+    @media(max-width: 640px) {
+        background-image: url(../img/technology/background-technology-mobile.jpg);
+        padding-top: 0;
+
+        .container-technology {
+            margin-top: 24px;
+            text-align: center;
+
+            h3 {
+                font-size: 16px !important;
+                letter-spacing: 2.7px !important;
+                
+            }
+
+            .content {
+                display: block;
+
+                .menu-tec {
+                    margin-top: 220px;
+                    
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+
+                }
+
+                .info-tec {
+                    .head {
+                        
+
+                        .info {
+                            margin-bottom: 50px;
+                            h3 {
+                                color: $gray;
+                                font-size: 14px;
+                                letter-spacing: 2.36px;
+                                margin-bottom: 9px;
+                                margin-top: 26px;
+                            }
+
+                            h2 {
+                                font-size: 24px;
+                                
+                                padding-bottom: 16px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                line-height: 25px;
+                                width: 327px;
+                            }
+                        }
+
+                        .image-1 {
+                                                        
+                            top: 140px;
+
+                            img{
+                                max-width: 100%;
+                                width: 374px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
